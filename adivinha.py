@@ -14,3 +14,10 @@ while True:
     if tentativa  == numero_asorte:
         print('Parabéns! Você acertou o número!')
         break
+    else: 
+        tentativas -= 1
+        if tentativas == 0:     
+            print(f'Você não acertou o número e não tem mais tentativas. O número era {numero_asorte}.')
+            break
+        else: 
+            print(f'Você errou! Tente novamente. Você ainda tem {tentativas} tentativas restantes.')
